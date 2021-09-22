@@ -212,6 +212,19 @@ public class DAO extends DBContext{
         return 0;
     }
     
+    public void changePass(String user, String pass ) {
+        String sql = "UPDATE Account SET [PassWord] = ? WHERE UserName = ?";
+        try {
+            PreparedStatement st = connection.prepareStatement(sql);
+            st.setString(1, pass);
+            st.setString(2, user);
+            st.executeUpdate();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return;
+    }
+    
 //    public static void main(String[] args) {
 //        DAO dao = new DAO();
 //        List<Account> list = dao.getAllAccount();

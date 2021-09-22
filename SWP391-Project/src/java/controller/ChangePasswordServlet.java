@@ -58,7 +58,7 @@ public class ChangePasswordServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        PrintWriter out = response.getWriter();
+         PrintWriter out = response.getWriter();
         String pass = request.getParameter("password");
         
         HttpSession session = request.getSession();
@@ -66,18 +66,13 @@ public class ChangePasswordServlet extends HttpServlet {
 //        String username = session.getAttribute(pass)
         
             
-           Account user = (Account) session.getAttribute("account");
-           String a = user.getAccount;
-           String b = user.getPassword();
-            dao.changePass(user.getAccount(), pass);
+           Account user = (Account) session.getAttribute("acc");
+            dao.changePass(user.getUserName(), pass);
 //        
 
-            session.setAttribute("account", user);
+            session.setAttribute("acc", user);
             out.println("Change Successful");
             
-//            request.getRequestDispatcher("changepassword.jsp").forward(request, response);
-//              response.sendRedirect("changepassword.jsp");
-        
     }
 
     /**
