@@ -407,7 +407,7 @@
                                             <td>${u.fName}</td>
                                             <td>${u.lName}</td>
                                             <td>${u.phone}</td>
-                                            <td><a class="btn btn-primary" href="detail?uid=${u.id}" role="button">Details</a></td>
+                                            <td><a class="btn btn-primary" href="edituser?id=${u.id}" role="button">Details</a></td>
                                             </tr>
                                         </c:forEach>                                      
                                     </tbody>

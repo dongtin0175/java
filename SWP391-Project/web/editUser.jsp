@@ -143,11 +143,11 @@ select:focus {
     <div class="py-2">
         <div class="row py-2">
             <div class="col-md-6"> <label for="userName">User Name</label> <input type="text" name="uname" class="bg-light form-control" value="${user.userName}"> </div>
-            <div class="col-md-6 pt-md-0 pt-3"> <label for="password">Pass Word</label> <input type="text" name="pass" class="bg-light form-control" value="${user.password}"> </div>
+            <div class="col-md-6 pt-md-0 pt-3"> <label for="password">Pass Word</label> <input type="text" name="pass" class="bg-light form-control" value="${user.passWord}"> </div>
         </div>
         <div class="row py-2">
-            <div class="col-md-6"> <label for="firstname">First Name</label> <input type="text" name="fname" class="bg-light form-control" value="${user.fname}"> </div>
-            <div class="col-md-6 pt-md-0 pt-3"> <label for="lastname">Last Name</label> <input type="text" name="lname" class="bg-light form-control" value="${user.lname}"> </div>
+            <div class="col-md-6"> <label for="firstname">First Name</label> <input type="text" name="fname" class="bg-light form-control" value="${user.fName}"> </div>
+            <div class="col-md-6 pt-md-0 pt-3"> <label for="lastname">Last Name</label> <input type="text" name="lname" class="bg-light form-control" value="${user.lName}"> </div>
         </div>
         <div class="row py-2">
             <div class="col-md-6"> <label for="email">Email Address</label> <input type="text" name="email" class="bg-light form-control" readonly value="${user.email}"> </div>
@@ -158,7 +158,7 @@ select:focus {
                     <option readonly value="${role}">${role}</option>
 
                 </select> </div>
-                    <input type="hidden" name="id" value="${user.userId}">
+                    <input type="hidden" name="id" value="${user.id}">
         </div>
         <div class="py-3 pb-4 border-bottom"> <input type="submit" name="submit" value="Save" class="btn btn-primary mr-3"> <input type="submit" name="submit" value="Cancel" class="btn border button"> </div>
     </div>

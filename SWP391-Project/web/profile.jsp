@@ -142,12 +142,12 @@ select:focus {
     </div>
     <div class="py-2">
         <div class="row py-2">
-            <div class="col-md-6"> <label for="ID">ID</label> <input type="text" name="id" class="bg-light form-control" readonly value="${user.userId}"> </div>
+            <div class="col-md-6"> <label for="ID">ID</label> <input type="text" name="id" class="bg-light form-control" readonly value="${user.id}"> </div>
             <div class="col-md-6 pt-md-0 pt-3"> <label for="userName">User Name</label> <input type="text" name="uname" class="bg-light form-control" value="${user.userName}"> </div>
         </div>
         <div class="row py-2">
-            <div class="col-md-6"> <label for="firstname">First Name</label> <input type="text" name="fname" class="bg-light form-control" value="${user.fname}"> </div>
-            <div class="col-md-6 pt-md-0 pt-3"> <label for="lastname">Last Name</label> <input type="text" name="lname" class="bg-light form-control" value="${user.lname}"> </div>
+            <div class="col-md-6"> <label for="firstname">First Name</label> <input type="text" name="fname" class="bg-light form-control" value="${user.fName}"> </div>
+            <div class="col-md-6 pt-md-0 pt-3"> <label for="lastname">Last Name</label> <input type="text" name="lname" class="bg-light form-control" value="${user.lName}"> </div>
         </div>
         <div class="row py-2">
             <div class="col-md-6"> <label for="email">Email Address</label> <input type="text" name="email" class="bg-light form-control" readonly value="${user.email}"> </div>
@@ -156,7 +156,7 @@ select:focus {
                 <div class="row py-2">
             <div class="col-md-6"> <label for="role">Role</label> <select name="role" id="country" class="bg-light">
                     <option value="${role}">${role}</option>
-                    <option value="admin">Admin</option>
+<!--                    <option value="admin">Admin</option>-->
                     <option value="booker">Booker</option>
                     <option value="owner">Owner</option>
                 </select> </div>
